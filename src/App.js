@@ -9,7 +9,12 @@ class App extends Component {
       <Grommet className="App-body">
           <Box>
             <Label>
-              CoA
+              Big
+            </Label>
+          </Box>
+          <Box>
+            <Label>
+              Bang
             </Label>
           </Box>
       </Grommet>
