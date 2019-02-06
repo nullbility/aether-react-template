@@ -9,60 +9,39 @@ class App extends Component {
       <Grommet className="App-body" full>
         <Grid
           fill
-          rows={["auto", "flex"]}
-          columns={["auto", "flex"]}
+          rows={["small", "600px", "flex"]}
+          columns={["flex", "800px", "flex"]}
           areas={[
-            { name: "header", start: [0, 0], end: [1,0] },
-            { name: "navigation", start: [0, 1], end: [0,1] },
-            { name: "main", start: [1, 1], end: [1,1] },
+            { name: "header", start: [0, 0], end: [2, 0] },
+            { name: "body", start: [1, 1], end: [1, 1] },
+            { name: "footer", start: [0, 2], end: [2, 2] },
           ]}
+          gap="small"
         >
 
-        <Box
-          gridArea='header'
-          direction='row'
-          align='center'
-          justify='between'
-        >
           <Box
-            pad={{ horizontal: 'medium', vertical: 'small' }}
+            gridArea='header'
+            direction='row'
+            align='center'
+            justify='between'
           >
-            <Label>
-              Logo
-            </Label>
+            <Box
+              pad={{ horizontal: 'medium', vertical: 'small' }}
+            >
+              <Label>
+                Logo
+              </Label>
+            </Box>
           </Box>
 
           <Box
-            pad={{ horizontal: 'medium', vertical: 'small' }}
-          >
-            <Label>
-              Social Media
-            </Label>
-          </Box>
-        </Box>
-
-        <Box
-          gridArea='navigation'
-          direction='row'
-          align='left'
-        >
-          <Box
-            pad={{ horizontal: 'medium', vertical: 'small' }}
+            gridArea='body'
+            direction='row'
           >
             <Label>
               Home
             </Label>
           </Box>
-
-          <Box
-            pad={{ horizontal: 'medium', vertical: 'small' }}
-          >
-            <Label>
-              About
-            </Label>
-          </Box>
-        </Box>
-
 
         </Grid>
       </Grommet>
