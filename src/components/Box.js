@@ -1,7 +1,6 @@
 import React from 'react';
 import { Box as BaseBox } from 'grommet';
 
-
 export const Box = ({
   children,
   ...props
@@ -11,7 +10,7 @@ export const Box = ({
       color: 'brand',
       opacity: 'weak'
     }}
-    {...props}
+    { ...props }
   >
     {
       children
