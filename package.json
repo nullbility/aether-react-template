@@ -1,6 +1,6 @@
 {
-  "name": "react-blog-template",
-  "version": "0.1.0",
+  "name": "aether-react-template",
+  "version": "0.1.1",
   "private": true,
   "dependencies": {
     "grommet": "^2.3.1",
