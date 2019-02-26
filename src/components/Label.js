@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import { map } from 'ramda';
+import { addIndex, map } from 'ramda';
+const mapIndexed = addIndex(map);
 
 const LabelContainer = styled.span`
   display: inline-block;
@@ -13,7 +14,10 @@ export const Label = ({
 }) => (
   <LabelContainer>
     {
-      map((child) => <Char>{ child }</Char>, children)
+      mapIndexed(
+        (child, i) => <Char key={i}>{ child }</Char>,
+        children
+      )
     }
   </LabelContainer>
 );
