@@ -1,10 +1,17 @@
 import React from 'react';
-import { TextInput as BaseInput } from 'grommet';
+import { TextInput as BaseInput, Box } from 'grommet';
 
 export const Input = ({ children, ...props }) => (
-  <BaseInput
-    { ...props }
+  <Box
+    background={{
+      color: 'light-1'
+    }}
+    round='xsmall'
   >
-    { children }
-  </BaseInput>
+    <BaseInput
+      { ...props }
+    >
+        { children }
+    </BaseInput>
+  </Box>
 );

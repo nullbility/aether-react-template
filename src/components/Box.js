@@ -6,10 +6,6 @@ export const Box = ({
   ...props
 }) => (
   <BaseBox
-    background={{
-      color: 'brand',
-      opacity: 'weak'
-    }}
     { ...props }
   >
     {

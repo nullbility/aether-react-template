@@ -1,11 +1,19 @@
 import React from 'react';
 import { Grommet } from 'grommet';
-import Login from './pages/Login'
+import { Box } from './components';
+import Login from './pages/Login';
 import './App.css';
 
 const myTheme = {
   global: {
-    colors: { brand: "#7D4CDB", accent: ["#3399cc", "#cc3399"] },
+    colors: { 
+      'brand': '#101C28',
+      'neutral-1': "#E8F1F8", 
+      'neutral-2': "#ADC4D6", 
+      'accent-1': "#F80652",
+      'accent-2': "#222F3F",
+      'light-1': '#F8F8F8',
+    },
     input: { border: { radius: "4px" } },
     button: { border: { radius: "4px" } },
     checkBox: { border: { radius: "4px" } },
@@ -15,8 +23,15 @@ const myTheme = {
 
 const App = () => {
   return (
-    <Grommet className="App-body" theme={myTheme} full>
-      <Login/>
+    <Grommet theme={myTheme} full>
+      <Box 
+        background={{
+          color: 'brand',
+        }} 
+        fill
+      >
+        <Login/>
+      </Box>
     </Grommet>
   );
 };
