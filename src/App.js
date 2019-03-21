@@ -24,13 +24,10 @@ const myTheme = {
 const App = () => {
   return (
     <Grommet theme={myTheme} full>
-      <Box 
-        background={{
-          color: 'brand',
-        }} 
+      <Box
         fill
       >
-        <Login/>
+        <Login />
       </Box>
     </Grommet>
   );

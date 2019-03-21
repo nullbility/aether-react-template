@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Button, Input, Grid } from '../components';
+import { Box, Button, Grid, Header, Input } from '../components';
 
 const Login = () => {
   return (
@@ -14,8 +14,14 @@ const Login = () => {
       ]}
     >
       <Box
+        gridArea="header"
+      >
+        <Header/> 
+      </Box>
+
+      <Box
         background={{
-          color: 'neutral-1'
+          color: 'accent-2'
         }}
         direction="column"
         gridArea="body"
