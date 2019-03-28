@@ -1,17 +1,17 @@
 import React from 'react';
 import { Grommet } from 'grommet';
 import { Box } from './components';
-import Login from './pages/Login';
+import Communicator from './pages/Communicator';
 import './App.css';
 
 const myTheme = {
   global: {
     colors: { 
-      'brand': '#101C28',
-      'neutral-1': "#E8F1F8", 
-      'neutral-2': "#ADC4D6", 
-      'accent-1': "#F80652",
-      'accent-2': "#222F3F",
+      'brand': '#233D4D',
+      'neutral-1': "#A1C181",
+      'neutral-2': "#579C87",
+      'accent-1': "#FE7F2D",
+      'accent-2': "#FCCA46",
       'light-1': '#F8F8F8',
     },
     input: { border: { radius: "4px" } },
@@ -27,7 +27,7 @@ const App = () => {
       <Box
         fill
       >
-        <Login />
+        <Communicator />
       </Box>
     </Grommet>
   );

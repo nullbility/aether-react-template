@@ -9,7 +9,6 @@ export const Button = styled(({ color, children, ...otherProps }) => (
 ))`
   color: white;
   cursor: pointer;
-  background-color: #e50914;
   line-height: normal;
   margin: 18px 3% 0 0;
   padding: 7px 17px;
@@ -23,7 +22,4 @@ export const Button = styled(({ color, children, ...otherProps }) => (
     css`
       float: right;
     `}
-  &:hover {
-    background-color: #e53935;
-  }
 `;
