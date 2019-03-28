@@ -1,22 +1,27 @@
 import React from 'react';
-import { Box, Button, Grid, Header, Input } from '../components';
+import { Box, Button, Channels, Grid, Header, Input } from '../components';
 
 const Communicator = () => {
     return (
         <Grid
             fill
             rows={['fill']}
-            columns={['medium', 'flex', 'medium']}
+            columns={['20%', 'flex', 'medium']}
             areas={[
                 { name: 'contacts', start: [0, 0], end: [0, 0] },
-                { name: 'body', start: [0, 1], end: [0, 1] },
-                { name: 'details', start: [0, 2], end: [0, 2] }
+                { name: 'body', start: [1, 0], end: [1, 0] },
+                { name: 'details', start: [2, 0], end: [2, 0] }
             ]}
         >
             <Box
                 gridArea="contacts"
             >
-                <Header/>
+                <Channels
+                    teamName="Team name"
+                    username="Username"
+                    channels={[{ id: 1, name: 'general' }, { id: 2, name: 'random' }]}
+                    users={[{ id: 1, name: 'slackbot' }, { id: 2, name: 'user1' }]}
+                />
             </Box>
 
             <Box
@@ -44,8 +49,10 @@ const Communicator = () => {
 
                     <Box gridArea="buttons">
                         <Button
+                            primary
                             backgroundColor='accent-2'
-                            label="submit" />
+                            label="submit" 
+                        />
                     </Box>
                 </Grid>
             </Box>

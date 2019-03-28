@@ -44,8 +44,10 @@ const Login = () => {
 
           <Box gridArea="buttons">
             <Button
-                backgroundColor='accent-2'
-                label="submit" />
+              primary
+              background='accent-2'
+              label="submit" 
+            />
           </Box>
         </Grid>
       </Box>
